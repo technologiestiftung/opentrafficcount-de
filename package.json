@@ -28,13 +28,16 @@
     "eslint": "^6.8.0"
   },
   "lint-staged": {
+    "**/*.+(js|jsx|ts|tsx)": [
+      "eslint --fix"
+    ],
     "**/*.+(js|jsx|json|yml|yaml|css|scss|ts|tsx|md)": [
       "prettier --write"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run lint-staged"
+      "pre-commit": "npm run lint-staged"
     }
   },
   "eslintConfig": {

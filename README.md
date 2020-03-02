@@ -25,7 +25,7 @@ You will need
 
 - Ruby >= 2.6 (install with [rbenv](https://github.com/rbenv/rbenv))
 - bundler (install with ruby gems `gem install bundler`)
-- Node.js >= 12 (optional, install with [nvm](https://github.com/nvm-sh/nvm))
+- Node.js >= 12 (install with [nvm](https://github.com/nvm-sh/nvm))
 
 ### Installing
 
