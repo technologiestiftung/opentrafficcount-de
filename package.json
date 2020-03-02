@@ -5,7 +5,7 @@
   "description": "Jekyll Microsite for the OTC project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "jekyll": "tools/run-jekyll.sh",
     "lint": "eslint --fix src/assets/js",
     "lint-staged": "lint-staged"
@@ -22,10 +22,17 @@
   },
   "homepage": "https://github.com/technologiestiftung/open-traffic-count-microsite#readme",
   "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.8.1",
     "husky": "^4.2.3",
+    "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1",
-    "eslint": "^6.8.0"
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "bulma": "^0.8.0"
   },
   "lint-staged": {
     "**/*.+(js|jsx|ts|tsx)": [
@@ -41,9 +48,13 @@
     }
   },
   "eslintConfig": {
+    "plugins": [
+      "jest"
+    ],
     "env": {
       "browser": true,
-      "es6": true
+      "es6": true,
+      "jest/globals": true
     },
     "extends": "eslint:recommended",
     "globals": {
@@ -72,7 +83,9 @@
       ]
     }
   },
-  "dependencies": {
-    "bulma": "^0.8.0"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
