@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jekyll": "tools/run-jekyll.sh",
+    "lint": "eslint src/assets/js --fix",
     "lint-staged": "lint-staged"
   },
   "repository": {
@@ -23,16 +24,50 @@
   "devDependencies": {
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "eslint": "^6.8.0"
   },
   "lint-staged": {
     "**/*.+(js|jsx|json|yml|yaml|css|scss|ts|tsx|md)": [
-      "prettier --write"
+      "prettier --write",
+      "npm run lint"
     ]
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
     }
   },
   "dependencies": {
