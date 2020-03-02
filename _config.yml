@@ -20,6 +20,7 @@ exclude:
   - Gemfile.lock
   - package.json
   - README.md
+  - assets/ts
 
 sass:
   sass_dir: assets/_scss
