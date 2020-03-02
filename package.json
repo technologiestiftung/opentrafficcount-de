@@ -1,0 +1,39 @@
+{
+  "name": "@tsb/open-traffic-count-microsite",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Jekyll Microsite for the OTC project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jekyll": "tools/run-jekyll.sh",
+    "lint-staged": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technologiestiftung/open-traffic-count-microsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/technologiestiftung/open-traffic-count-microsite/issues"
+  },
+  "homepage": "https://github.com/technologiestiftung/open-traffic-count-microsite#readme",
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1"
+  },
+  "lint-staged": {
+    "**/*.+(js|jsx|json|yml|yaml|css|scss|ts|tsx|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  }
+}

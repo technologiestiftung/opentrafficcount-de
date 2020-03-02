@@ -1,0 +1,27 @@
+source: src
+title: Open Traffic Count
+description: >- #<-- means ignore newline until next key
+  Microsite for the Project Open Traffic Count
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  parse_block_html: true
+  footnote_backlink:
+    "↑"
+    # https://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  syntax_highlighter: rouge
+host: localhost
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+
+plugins:
+  - jekyll-sitemap
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
