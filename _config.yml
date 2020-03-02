@@ -32,6 +32,7 @@ defaults:
       layout: "default"
 plugins:
   - jekyll-sitemap
+  - octopress-autoprefixer
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"

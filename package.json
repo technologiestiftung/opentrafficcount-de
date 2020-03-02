@@ -83,6 +83,15 @@
       ]
     }
   },
+  "browserslist": [
+    ">5%",
+    "last 2 versions",
+    "not dead",
+    "Firefox ESR",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
