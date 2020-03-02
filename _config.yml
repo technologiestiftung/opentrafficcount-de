@@ -13,6 +13,7 @@ kramdown:
     # https://kramdown.gettalong.org/syntax_highlighter/rouge.html
   syntax_highlighter: rouge
 host: localhost
+
 exclude:
   - node_modules
   - Gemfile
@@ -20,6 +21,15 @@ exclude:
   - package.json
   - README.md
 
+sass:
+  sass_dir: assets/_scss
+  style: compressed
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 plugins:
   - jekyll-sitemap
 webrick:

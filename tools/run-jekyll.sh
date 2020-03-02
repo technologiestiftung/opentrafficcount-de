@@ -10,4 +10,4 @@ if hash bundler 2>/dev/null; then
   exit 1
 fi
 
-bundle exec jekyll serve --livereload --incremental
+bundle exec jekyll serve --livereload --incremental --trace
