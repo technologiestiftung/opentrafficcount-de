@@ -56,3 +56,4 @@ then
 fi
 
 bundle install
+npm install
