@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jekyll": "tools/run-jekyll.sh",
-    "lint": "eslint src/assets/js --fix",
+    "lint": "eslint --fix src/assets/js",
     "lint-staged": "lint-staged"
   },
   "repository": {
@@ -29,13 +29,12 @@
   },
   "lint-staged": {
     "**/*.+(js|jsx|json|yml|yaml|css|scss|ts|tsx|md)": [
-      "prettier --write",
-      "npm run lint"
+      "prettier --write"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-staged"
+      "pre-commit": "npm run lint && npm run lint-staged"
     }
   },
   "eslintConfig": {
