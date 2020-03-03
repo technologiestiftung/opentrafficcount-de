@@ -33,16 +33,26 @@
     "@types/jest": "^25.1.3",
     "@typescript-eslint/eslint-plugin": "^2.21.0",
     "@typescript-eslint/parser": "^2.21.0",
+    "autoprefixer": "^9.7.4",
     "cross-env": "^7.0.0",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
     "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.8.1",
     "eslint-plugin-prettier": "^3.1.2",
+    "extract-loader": "^4.0.3",
+    "file-loader": "^5.1.0",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "postcss-load-config": "^2.1.0",
+    "postcss-loader": "^3.0.0",
     "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
     "ts-jest": "^25.2.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3",
@@ -140,6 +150,12 @@
     "not IE_Mob 11",
     "maintained node versions"
   ],
+  "//comment-postcss": "cssnano is configured based on NODE_ENV",
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

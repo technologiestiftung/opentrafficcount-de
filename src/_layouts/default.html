@@ -3,14 +3,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{site.title}}</title>
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/index.css" />
   </head>
   <body>
     <header></header>
     <section class="section">
       <div class="hero">
         <h1 class="is-title is-1">
-          {{page.title}}
+          {{page.title}}{{ "now" | date: "%Y%m%d%H%M%s" }}
+<!--  -->
         </h1>
       </div>
       <div class="container">
