@@ -1,5 +1,6 @@
----
----
+@import "./partials/test.scss";
+@import "~bulma/bulma.sass";
 
-@import "partial";
-@import "../../../node_modules/bulma/bulma.sass";
+body {
+  background-color: red;
+}
