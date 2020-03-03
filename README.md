@@ -10,6 +10,7 @@
     - [Prerequisites](#prerequisites)
     - [Installing](#installing)
     - [Development](#development)
+  - [Deployment](#deployment)
 
 <!-- /code_chunk_output -->
 
@@ -61,3 +62,13 @@ npm run dev
 ```
 
 Use `CTRL + C` to stop the server.
+
+## Deployment
+
+The site is deployed through git hooks to Netlify. You will need to:
+
+- Create a new branch `git checkout -b my-new-feature`
+- Push the branch to the remote `git push origin my-new-feature`
+- Open a pull request for review.
+
+Do not push to master directly!
