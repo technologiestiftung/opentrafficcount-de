@@ -9,6 +9,7 @@
     "test:watch": "jest --watch",
     "watch:ts": "tsc -p . --watch",
     "build:ts": "tsc -p .",
+    "build": "./tools/build.sh",
     "webpack:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
     "webpack:dev": "webpack --progress --info-verbosity --config webpack/webpack.config.dev.js",
     "watch:jekyll": "tools/run-jekyll.sh",
