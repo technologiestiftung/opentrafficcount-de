@@ -12,7 +12,6 @@ kramdown:
     "↑"
     # https://kramdown.gettalong.org/syntax_highlighter/rouge.html
   syntax_highlighter: rouge
-host: localhost
 
 exclude:
   - node_modules
@@ -21,10 +20,9 @@ exclude:
   - package.json
   - README.md
   - assets/ts
-
-sass:
-  sass_dir: assets/_scss
-  style: compressed
+  # - assets/css/partials
+  # - assets/css/index.scss
+  # - assets/css
 
 defaults:
   - scope:
@@ -33,7 +31,6 @@ defaults:
       layout: "default"
 plugins:
   - jekyll-sitemap
-  - octopress-autoprefixer
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"

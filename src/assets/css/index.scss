@@ -1,5 +1,2 @@
----
----
-
-@import "partial";
-@import "../../../node_modules/bulma/bulma.sass";
+@import "./partials/test.scss"; // remove me
+@import "~bulma/bulma.sass";

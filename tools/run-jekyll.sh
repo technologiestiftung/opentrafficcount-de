@@ -10,4 +10,5 @@ if hash bundler 2>/dev/null; then
   exit 1
 fi
 
-bundle exec jekyll serve --livereload --incremental --trace
+bundle exec jekyll serve --livereload
+# bundle exec jekyll serve --livereload --livereload_min_delay 1 --trace

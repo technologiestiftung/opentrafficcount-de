@@ -10,6 +10,7 @@
     - [Prerequisites](#prerequisites)
     - [Installing](#installing)
     - [Development](#development)
+  - [Deployment](#deployment)
 
 <!-- /code_chunk_output -->
 
@@ -42,8 +43,32 @@ cd open-traffic-count-microsite
 
 All files that are used for the actual site are located in the [`src`](/src/) folder. The entrypoint to the site is [`index.md`](/src/index.md).
 
-To run the Jekyll livereload you need to execute bundle exec `jekyll serve --livereload --incremental`. If you can't remember this and you are using Node.js on your computer, execute `npm run jekyll`.
+To run the Jekyll with "livereload" enabled you need to execute:
 
-Both will run a server on [http://localhost:4000](http://localhost:4000).
+```bash
+bundle exec jekyll serve --livereload
+```
+
+For compiling `scss` and `ts` you need to run:
+
+```bash
+npm run webpack:dev
+```
+
+For convenience this is combined in the the command:
+
+```bash
+npm run dev
+```
 
 Use `CTRL + C` to stop the server.
+
+## Deployment
+
+The site is deployed through git hooks to Netlify. You will need to:
+
+- Create a new branch `git checkout -b my-new-feature`
+- Push the branch to the remote `git push origin my-new-feature`
+- Open a pull request for review.
+
+Do not push to master directly!
