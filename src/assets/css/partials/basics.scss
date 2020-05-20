@@ -23,7 +23,8 @@ html {
     font-size: 18px;
   }
 }
-a {
+a,
+a:visited {
   text-decoration: none;
   color: #4293c1;
   &:hover {
