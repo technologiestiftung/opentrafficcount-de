@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans";
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  h3 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

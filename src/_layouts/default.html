@@ -6,23 +6,34 @@
     <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/index.css" />
   </head>
   <body>
-    <header></header>
-    <section class="section">
-      <div class="hero">
-        <h1 class="is-title is-1">
-          {{page.title}}
-
-        </h1>
-      </div>
-      <div class="container">
-        <div class="columns">
-          <div class="column is-full is-centered">
-            {{content}}
-          </div>
+    <header>
+      <div>
+        <h1>OpenTrafficCount</h1>
+        <h2>Datenschutzkonforme Verkehrszählung</h2>
+        <div id="header-logos">
+          Ein Forschungsprojekt im Rahmen des mFund (BMVI).<br />
+          <a href="https://www.technologiestiftung-berlin.de">
+            <img src="/assets/images/tsb-logo_white.png" width="252" srcset="/assets/images/tsb-logo_white@2x.png 2x" alt="Technologiestiftung Berlin" />
+          </a>
+          <a href="https://www.htw-berlin.de">
+            <img src="/assets/images/htw-logo_white.png" width="197" srcset="/assets/images/htw-logo_white@2x.png 2x" alt="Hochschule für Technik und Wirtschaft Berlin" />
+          </a>
         </div>
       </div>
+    </header>
+    <section class="section">
+      <div class="container">
+        {{content}}
+      </div>
     </section>
-    <footer></footer>
+    <footer>
+      <p>
+        <img src="/assets/images/bmvi-logo.jpg" width="107" srcset="/assets/images/bmvi-logo@2x.jpg 2x" alt="Gefördert durch das Bundesministerium für Verkehr und digitale Infrastruktur aufgrund eines Beschlusses des Deutschen Bundestages" />
+        <img src="/assets/images/mfund-logo.jpg" width="171" srcset="/assets/images/mfund-logo@2x.jpg 2x" alt="mFund - Das Startkapital für die Mobilität 4.0" />
+      </p>
+      <p>Assoziierter Parnter<br /><img src="/assets/images/logo-movelab.jpg" width="345" srcset="/assets/images/logo-movelab@2x.jpg 2x" alt="move lab - a space of ideas" /></p>
+      <p><a href="https://www.technologiestiftung-berlin.de/de/impressum/">Impressum</a> | <a href="https://www.technologiestiftung-berlin.de/de/datenschutz/">Datenschutz</a> | <span class="attribution">Photo im Header von <a href="https://www.flickr.com/photos/erik_91nl/19016860611">Erik</a> via Flickr.</span></p>
+    </footer>
     <script src="/assets/js/index.bundle.js"></script>
   </body>
 </html>
