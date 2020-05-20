@@ -5,7 +5,7 @@
   "description": "Jekyll Microsite for the OTC project",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "watch:ts": "tsc -p . --watch",
     "build:ts": "tsc -p .",

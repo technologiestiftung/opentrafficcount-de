@@ -23,6 +23,13 @@ html {
     font-size: 18px;
   }
 }
+a {
+  text-decoration: none;
+  color: #4293c1;
+  &:hover {
+    color: black;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .container {
